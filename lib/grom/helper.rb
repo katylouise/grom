@@ -4,6 +4,7 @@ module Grom
     # Creates a symbol in instance variable format which has been underscored, pluralized and downcased.
     #
     # @param [String] string instance variable name.
+    #
     # @example Create a pluralized instance variable symbol
     #   Grom::Helper.pluralize_instance_variable_symbol('sittingHasPerson') #=> :@sitting_has_people
     #
@@ -20,6 +21,7 @@ module Grom
     # @param [Hash] hash
     # @param [String, Symbol] key the key to use in the hash.
     # @param [Object] value the value to attribute to the key.
+    #
     # @example Adding values to an existing array within the hash
     #   Grom::Helper.lazy_array_insert({ :numbers => [1, 2, 3] }, :numbers, 4) #=> [1, 2, 3, 4]
     #
@@ -32,11 +34,11 @@ module Grom
       hash[key] << value
     end
 
-    # Returns the last part of a uri
+    # Returns the last part of a URI
     #
-    # @param [String] uri uri
-    # @return [String] the last part of the uri or 'type' if the uri is an RDF type uri
-    # @return [nil] if the uri is not valid
+    # @param [String] uri URI
+    # @return [String] the last part of the URI or 'type' if the URI is an RDF type URI
+    # @return [nil] if the URI is not valid
     def self.get_id(uri)
       return nil if uri.to_s['/'].nil?
 

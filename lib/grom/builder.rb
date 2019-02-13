@@ -8,7 +8,7 @@ module Grom
     attr_reader :objects, :response
 
     # @param [Grom::Reader] reader a Grom::Reader instance populated with data.
-    # @param [Module] decorators a Module that answers to #decorate_with_type(node, type)
+    # @param [Module] decorators a module that answers to #decorate_with_type(node, type).
     def initialize(reader, decorators = nil)
       @reader = reader
       @decorators = decorators

@@ -1,5 +1,5 @@
 # [![Graph Object Mapper (GROM)][grom-logo]][grom]
-[GROM][grom] is a gem created by the [Parliamentary Digital Service][pds] to take [ntriple][ntriple] files representing graph data and deserialise them into ruby objects.
+[GROM][grom] is a gem created by the [Parliamentary Digital Service][pds] to take [ntriple][ntriple] files representing graph data and deserialise them into Ruby objects.
 
 [![Build Status][shield-travis]][info-travis] [![Test Coverage][shield-coveralls]][info-coveralls] [![License][shield-license]][info-license]
 
@@ -34,7 +34,7 @@ gem 'grom'
 
 
 ## Usage
-This gem's main function is taking an [ntriple][ntriple] data stream and deserialising it into linked `Grom::Node` objects.
+This gem's main function is to take an [ntriple][ntriple] data stream and deserialise it into linked `Grom::Node` objects.
 
 ```ruby
 file = File.read('people_members_current.nt')
